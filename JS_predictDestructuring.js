@@ -28,7 +28,7 @@ const person = {
 const password = '12345';
 const { password: hashedPassword } = person;
 console.log(password);
-// undefined
+// undefined > 12345
 console.log(hashedPassword);
 // undefined
 
@@ -47,8 +47,11 @@ const lastTest = {
     key: 'value',
     secondKey: [1,5,1,8,3,3]
 }
+// lastTest.key
 const {key} = lastTest;
+// lastTest.secondKey
 const {secondKey} = lastTest;
+// lastTest.secondKey[1]
 const [ , willThisWork] = secondKey;
 console.log(key)
 // value
